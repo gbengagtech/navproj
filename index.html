@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <title>ABOUT US</title>
+    <link rel="stylesheet" href="./all.min.css">
+    <link rel="stylesheet" href="./responsiveness.css">
+</head>
+
+<body>
+    <header>
+        <div class="container1">
+            <div class="logo">
+                <span><i class="fas fa-chess-queen"></i></span>
+                <h3>BuyVal</h3>
+            </div>
+            <nav>
+                <a href="" class="active">Home</a>
+                <a href="">Service</a>
+                <a href="">About us</a>
+                <a href="">Contact us</a>
+                <a href="" class="button">Join us</a>
+            </nav>
+            <span class="bar"><i class="fas fa-bars"></i></span>
+            <span class="time"><i class="fas fa-times"></i></span>
+        </div>
+
+    </header>
+    <script>
+        let bar = document.querySelector('.bar');
+        let time = document.querySelector('.time');
+        let links = document.querySelector('nav');
+        bar.onclick = function () {
+            // console.log("yes");
+            this.style.display = "none";
+            links.style.display = "flex";
+            time.style.display = "flex";
+        }
+        time.onclick = function () {
+            // console.log("yes");
+            this.style.display = "none";
+            links.style.display = "none";
+            bar.style.display = "flex";
+        }
+
+    </script>
+    <script src="./all.min.js"></script>
+</body>
+
+</html>
